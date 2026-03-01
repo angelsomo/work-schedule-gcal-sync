@@ -21,7 +21,7 @@ A Python automation tool that extracts an employee's monthly work schedule from 
 - Actual headers start on **row 3**
 - Employee names are in column `AGENTS` (or second column fallback)
 - Date columns formatted like: `Feb-2`, `Mar-15`, `Nov-30`
-- Work shifts contain time ranges like: 09:00 - 17:00. Everything else is treated as an off-day
+- Work shifts contain time ranges like: `09:00 - 17:00`. Everything else is treated as an off-day
 
 ---
 
