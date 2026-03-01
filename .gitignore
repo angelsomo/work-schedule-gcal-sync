@@ -4,8 +4,7 @@ token.json
 token.pickle
 
 # Real schedule data
-CSVs/*.csv
-*.csv
+CSVs/master_schedule.csv
 
 # Python / venv
 .venv/
