@@ -37,14 +37,14 @@ from zoneinfo import ZoneInfo
 # ==============================
 # USER CONFIG
 # ==============================
-TARGET_EMPLOYEE = "Άγγελος Σώμογλου (Θεσσαλονίκη)"
+TARGET_EMPLOYEE = "FULL NAME HERE"   # must match exactly (case-insensitive, leading/trailing spaces ignored)
 YEAR = 2026
 TIMEZONE = "Europe/Athens"
 
-CALENDAR_ID = "f5ea6d8d87e2fdcaa267ebdc5b0114f4b96425b11b4ee472548cd5a3daf17d94@group.calendar.google.com"      # or a specific calendarId
-EVENT_TITLE = "Work Shift (Angel)"
+CALENDAR_ID = "primary"
+EVENT_TITLE = "Work Shift"
 
-DRY_RUN = False              # first run True. When correct, set to False.
+DRY_RUN = True              # first run True. When correct, set to False.
 
 
 # ==============================
@@ -360,6 +360,12 @@ def main() -> None:
         print("\nSet DRY_RUN = False to actually create the events.")
         print(f"After first OAuth login, token will be saved to: {TOKEN_PATH}")
 
+try:
+    from local_config import (
+        TARGET_EMPLOYEE, CALENDAR_ID, EVENT_TITLE, YEAR, TIMEZONE, DRY_RUN
+    )
+except ImportError:
+    pass
 
 if __name__ == "__main__":
     main()

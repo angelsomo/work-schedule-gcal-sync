@@ -12,3 +12,6 @@ venv/
 __pycache__/
 *.pyc
 .env
+
+# Local configuration
+local_config.py
