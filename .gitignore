@@ -1,0 +1,15 @@
+# Secrets / OAuth
+credentials.json
+token.json
+token.pickle
+
+# Real schedule data
+CSVs/*.csv
+*.csv
+
+# Python / venv
+.venv/
+venv/
+__pycache__/
+*.pyc
+.env
